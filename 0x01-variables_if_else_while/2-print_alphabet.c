@@ -7,11 +7,11 @@
  */
 int main(void)
 {
-	int alpha = 97;
+	int ch = 'a';
 
-	while (alpha < alpha + 26)
+	while (ch > 96 && ch < 123)
 	{
-		putchar(alpha);
+		putchar(ch);
 		alpha = alpha + 1;
 	};
 	return (0);
