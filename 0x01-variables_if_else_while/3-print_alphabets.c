@@ -8,7 +8,7 @@
 int main(void)
 {
 	int ch = 'a';
-	int ca = 'A'
+	int ca = 'A';
 
 	while (ch > 96 && ch < 123)
 	{
@@ -18,7 +18,7 @@ int main(void)
 	while (ca > 'A' && ca < (ca + 26))
 	{
 		putchar(ca);
-	}
+	};
 		putchar('\n');
 	return (0);
 }
