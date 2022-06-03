@@ -12,7 +12,7 @@ int main(void)
 	while (ch > 96 && ch < 123)
 	{
 		putchar(ch);
-		alpha = alpha + 1;
+		ch = ch + 1;
 	};
 	return (0);
 }
