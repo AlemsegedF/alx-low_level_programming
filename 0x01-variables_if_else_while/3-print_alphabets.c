@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int ch = 'a';
+	int ch = 97;
 	int ca = 'A';
 
 	while (ch > 96 && ch < 123)
@@ -15,7 +15,7 @@ int main(void)
 		putchar(ch);
 		ch = ch + 1;
 	};
-	while (ca > 65 && ca < (65 + 26))
+	while (ca > 64 && ca < ('A' + 26))
 	{
 		putchar(ca);
 		ca = ca + 1;
