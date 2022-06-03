@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int alpha = 097;
+	int alpha = 97;
 
 	while (alpha < alpha + 26)
 	{
