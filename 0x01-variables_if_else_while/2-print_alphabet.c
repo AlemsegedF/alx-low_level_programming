@@ -11,7 +11,7 @@ int main(void)
 
 	while (alpha < alpha + 26)
 	{
-		putchar("%c\n", alpha);
+		putchar(alpha);
 		alpha = alpha + 1;
 	};
 	return (0);
