@@ -9,10 +9,11 @@
 int main(void)
 {
 	int a = '0';
+	int b;
 
 	for (; a >= '0' && a <= '8'; a++)
 	{
-		for (int b = '0'; b >= '0' && b <= '9'; b++)
+		for (b = '0'; b >= '0' && b <= '9'; b++)
 		{
 			if (a != b && a < b)
 			{
