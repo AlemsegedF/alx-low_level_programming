@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * main - Entery point
+ * print_alphabet - Entery point
  * description - prints alphabbets
  * in lower case letters
- * Return: always 0 (success
+ * Return: void
  */
-int main(void)
+void print_alphabet(void)
 {
 	char alpha = 'a';
 
@@ -14,5 +14,5 @@ int main(void)
 		_putchar(alpha);
 		alpha++;
 	};
-	return (0);
+	_putchar('\n');
 }
