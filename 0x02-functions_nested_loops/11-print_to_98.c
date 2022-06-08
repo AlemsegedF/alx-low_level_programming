@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * print_to_98 - Entery point
  * Description - rint to 98
