@@ -16,7 +16,7 @@ void print_times_table(int n)
 		{
 			for (j = 0; j <= n; j++)
 			{
-			       p= i * j;
+			       p = i * j;
 			       p100 = p / 100;
 			       p10 = (p / 10) % 10;
 			       p1 = p % 10;
