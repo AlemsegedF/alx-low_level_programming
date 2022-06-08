@@ -27,7 +27,7 @@ void print_times_table(int n)
 					_putchar(p100 + '0');
 					_putchar(p10 + '0');
 					_putchar(p1 + '0');
-				};
+				}
 				else if (p > 9)
 				{
 					_putchar(',');
@@ -35,7 +35,7 @@ void print_times_table(int n)
 					_putchar(32);
 					_putchar(p10 + '0');
 					_putchar(p1 + '0');
-				};
+				}
 				else
 				{
 					if (j != 0)
@@ -46,9 +46,9 @@ void print_times_table(int n)
 						_putchar(32);
 					};
 					_putchar(p + '0');
-				};
-			};
+				}
+			}
 			_putchar('\n');
-		};
-	};
+		}
+	}
 }
