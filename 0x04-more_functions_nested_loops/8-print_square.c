@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * print_square - Entery point
+ * @size: entered value
  * description -prints a square
  * Return: void
  */
