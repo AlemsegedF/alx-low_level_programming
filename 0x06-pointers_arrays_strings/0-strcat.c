@@ -5,9 +5,9 @@
 
 /**
  * _strcat - concatenates two strings
- * @dest:
- * @src:
- * return: dest
+ * @dest: string to accept the add string
+ * @src: string to be add
+ * Return: dest
  */
 
 
@@ -15,8 +15,9 @@ char *_strcat(char *dest, char *src)
 {
 	size_t dest_len = strlen(dest);
 	size_t i;
-	for (i = 0 ; i < n && src[i] != '\0' ; i++)
+
+	for (i = 0 ; src[i] != '\0'; i++)
 		dest[dest_len + i] = src[i];
 	dest[dest_len + i] = '\0';
-	return dest;
+	return (dest);
 }
