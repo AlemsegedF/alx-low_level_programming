@@ -16,11 +16,13 @@ char *cap_string(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (j = 0; cm[j] != '\0'; j++)
+		for (j = 0; j < 13; j++)
 		{
 			if (str[i] >= 'a' && str[i] <= 'z')
+			{
 				if (str[i - 1] == cm[j])
 					str[i] -= 32;
+			}
 		}
 	}
 	return (str);
