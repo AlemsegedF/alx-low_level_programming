@@ -9,7 +9,7 @@
 
 char *rot13(char *s)
 {
-	int i, j;
+	int i = 0, j;
 	char com1[52] = {'a', 'b', 'c', 'd', 'e', 'e', 'g',
 	'h', 'i', 'j', 'k', 'l', 'm', 'A', 'B', 'C', 'D',
 	'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
@@ -22,8 +22,7 @@ char *rot13(char *s)
 	'a', 'b', 'c', 'd', 'e', 'e', 'g',
 	'h', 'i', 'j', 'k', 'l', 'm', 'A', 'B', 'C', 'D',
 	'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M'};
-
-	for (i = 0; s[i]; i++)
+	while (s[i] != '\0')
 	{
 		for (j = 0; j < 52; j++)
 		{
@@ -33,6 +32,7 @@ char *rot13(char *s)
 				break;
 			}
 		}
+		i++;
 	}
 	return (s);
 }
