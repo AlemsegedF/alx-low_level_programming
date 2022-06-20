@@ -22,7 +22,7 @@ char *_strchr(char *s, char c)
 			return (s + i);
 		}
 	}
-			ret = 0;
+			ret = NULL;
 
 	return (ret);
 }
