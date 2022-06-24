@@ -19,12 +19,14 @@ int main(int argc, char *argv[])
 	}
 	num = atoi(argv[1]);
 	if (num < 0)
-		printf("%d\n", 0);
+		printf("0\n");
 	sum = 0;
 	for (i = 0; i < 5; i++)
 	{
 		sum += num / coins[i];
 		num %= coins[i];
+		if (num == 0)
+			break;
 	}
 	printf("%d\n", sum);
 	return (0);
