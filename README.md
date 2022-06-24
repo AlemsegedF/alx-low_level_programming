@@ -1,1 +1,1 @@
-This dirctory is for the argc and argv projects
+This repository is for alx low level programming projects
