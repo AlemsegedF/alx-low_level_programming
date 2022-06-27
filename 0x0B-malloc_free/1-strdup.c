@@ -12,7 +12,7 @@
 
 char *_strdup(char *str)
 {
-	int i, size;
+	unsigned int i, size;
 	char *array;
 
 	size = sizeof(str);
