@@ -20,13 +20,12 @@ char *str_concat(char *s1, char *s2)
 	for (i = 0; s2[i]; i++)
 		len2++;
 	size = len1 + len2;
-	array = (char *) malloc(sizeof(char) * (size + 1));
+	array = (char *) malloc(sizeof(char) * (size));
+	if(array == NULL)
+		return(NULL);
 	for (i = 0; s1[i]; i++)
 		array[i] = s1[i];
 	for (j = 0; s2[j]; j++)
 		array[i + j] = s2[j];
-	array[size + 1] = '\0';
-	if (array[size + 1] == '\0')
-		return (array);
-	return (NULL);
+	return (array);
 }
