@@ -15,8 +15,6 @@ char *str_concat(char *s1, char *s2)
 	char *array;
 
 	len1 = len2 = size = 0;
-	if (s1 == NULL && s2 == NULL)
-		return (NULL);
 	for (i = 0; s1[i]; i++)
 		len1++;
 	for (i = 0; s2[i]; i++)
