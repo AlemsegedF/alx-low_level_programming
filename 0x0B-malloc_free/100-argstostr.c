@@ -20,9 +20,9 @@ char *argstostr(int ac, char **av)
 	{
 		for (j = 0; av[i][j]; j++)
 			;
-		len = len + j;
+		len += j;
 	}
-	str = malloc(sizeof(char) * len);
+	str = malloc(sizeof(char) * len + i);
 	if (str == NULL)
 		return (NULL);
 	k = 0;
