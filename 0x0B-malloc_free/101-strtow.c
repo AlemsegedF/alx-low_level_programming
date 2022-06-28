@@ -31,7 +31,7 @@ int num_words_func(char *str)
 
 
 /**
- * size_word - number of characters in word
+ * word_size- number of characters in word
  * @str: string
  * Return: size
  */
