@@ -11,12 +11,12 @@ char **memory_l(char *);
 
 char **memory_l(char *str)
 {
-	int i, num_words, len= 0;
+	long int i, num_words, len= 0;
 	char **ptr;
 
 	for(i = 0; str[i]; i++)
 		len++;
-	if (len == 0)
+	if (len <= 1)
 		return (NULL);
 	if (str == NULL)
 		return (NULL);
@@ -46,7 +46,7 @@ char **memory_l(char *str)
 
 char **strtow(char *str)
 {
-	int i, j, k, size, ptr_i;
+	long i, j, k, size, ptr_i;
 	char **ptr;
 	
 	ptr = memory_l(str);
@@ -62,7 +62,7 @@ char **strtow(char *str)
 		}
 		if (size >= 1)
 		{
-			ptr[ptr_i] = malloc(sizeof(char) * (size));
+			ptr[ptr_i] = malloc(sizeof(char) * (size - 1));
 			if (ptr[ptr_i] == NULL)
 			{
 				for (j = ptr_i; j >= 0; j--)
