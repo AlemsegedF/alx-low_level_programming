@@ -11,7 +11,7 @@ char **memory_l(char *);
 
 char **memory_l(char *str)
 {
-	long int i, num_words, len= 0;
+	long int i, num_words, len = 0;
 	char **ptr;
 
 	for(i = 0; str[i]; i++)
@@ -23,7 +23,7 @@ char **memory_l(char *str)
 	num_words = 0;
 	for (i = 0; str[i]; i++)
 	{
-		if (str[i] != ' ' && str[i - 1] == ' ') 
+		if (str[i] != ' ' && str[i - 1] == ' ')
 			num_words++;
 		else if (str[i] != ' ' && str[i + 1] == ' ')
 			num_words++;
@@ -48,7 +48,7 @@ char **strtow(char *str)
 {
 	long i, j, k, size, ptr_i;
 	char **ptr;
-	
+
 	ptr = memory_l(str);
 	if (ptr == NULL)
 		return (NULL);
