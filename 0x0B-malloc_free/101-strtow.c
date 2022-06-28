@@ -51,7 +51,7 @@ char **strtow(char *str)
 		}
 		if (size >= 1)
 		{
-			ptr[ptr_i] = malloc(sizeof(char) * size);
+			ptr[ptr_i] = malloc(sizeof(char) * (size - 1));
 			if (ptr[ptr_i] == NULL)
 			{
 				for (j = ptr_i; j >= 0; j--)
