@@ -24,10 +24,9 @@ int *array_range(int min, int max)
 	}
 	fill = ptr;
 	for (i = 0; i < length; i++)
-		{
-			fill[i] = min;
-			min++;
-
-		}
+	{
+		fill[i] = min;
+		min++;
+	}
 	return (ptr);
 }
