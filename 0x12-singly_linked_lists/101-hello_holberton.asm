@@ -1,3 +1,8 @@
+; My comments: It is so fun to write in assembly language
+; File: 101-hello_holberton.asm
+; Auth: Alemseged Fekede
+; Desc: 64-bit assembly program that prints
+;       Hello, Holberton followed by a new line.
 section .data
     string1 db  "Hello, Holberton",10   ; '10' at end is line feed
 
