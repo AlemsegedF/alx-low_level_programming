@@ -1,4 +1,4 @@
-#include "lists.h"
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 9-main.c 3-add_nodeint_end.c 0-print_listint.c 5-free_listint2.c 9-insert_nodeint.c -o j#include "lists.h"
 #include <stdlib.h>
 
 /**
@@ -26,7 +26,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		*head = new;
 		return (new);
 	}
-	for (i = 0; i < idx; i++)
+	for (i = 0; i < (idx - 1); i++)
 	{
 		if (ptr == NULL || ptr->next == NULL)
 			return (NULL);
