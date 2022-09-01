@@ -10,6 +10,7 @@
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *dark, *hold;
+
 	dark = malloc(sizeof(dlistint_t));
 	if (dark == NULL)
 		return (NULL);
