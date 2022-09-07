@@ -1,3 +1,3 @@
 #!/bin/bash
-wget -p /tmp https://github.com/AlemsegedF/alx-low_level_programming/raw/master/0x18-dynamic_libraries/libwin.so
-export LD_PRELOAD=/run/libwin.so
+wget -P /tmp https://github.com/AlemsegedF/alx-low_level_programming/raw/main/0x18-dynamic_libraries/win.so
+export LD_PRELOAD=/tmp/win.so
